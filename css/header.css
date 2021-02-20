@@ -1,0 +1,25 @@
+header {
+    padding: 38px 0;
+    background-color: #fff;
+  }
+  
+  header > .container > .header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+    text-transform: uppercase;
+  }
+  
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a {
+    color: #191919;
+  }
+  
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a:focus {
+    color: #39B4AF;
+  }

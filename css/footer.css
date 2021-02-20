@@ -1,0 +1,43 @@
+footer {
+    background-color: #141414;
+    padding: 85px 0;
+}
+
+footer .footer_content_place {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .footer_content_place > .content1 {
+    width: 225px;
+}
+
+footer .footer_content_place > .content {
+    padding: 15px 10px;
+}
+
+footer .footer_content_place > .content > h5 {
+    color: #BCBCBC;
+    font-family: "Nunito Sans";
+}
+
+footer .footer_content_place > .content1 > h3 {
+    color: #ffffff;
+    font-family: "Montserrat";
+}
+
+footer .footer_content_place > .content2 > h5 {
+    width: 153px;
+}
+
+footer .footer_content_place > .content3 {
+    display: flex;
+    width: 165px;
+    justify-content: space-between;
+}
+
+footer .footer_content_place > .content > ul > li {
+    color: #BCBCBC;
+    font-family: "Nunito Sans";
+}

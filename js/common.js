@@ -39,9 +39,21 @@ $(function() {
 	
 });
 
-$(window).load(function() {
+/*loader*/
+
+$(window).on('load', function() {
 
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 
 });
+
+
+$(document).ready(function(){
+
+	$path = window.location.href;
+	jQuery('a[href="' + $path + '"]').each(function(){
+	  jQuery(this).addClass('active');
+	});
+  
+  });
