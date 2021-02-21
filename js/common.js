@@ -32,10 +32,34 @@ $( "#login_btn" ).click(function() {
 $( "#close" ).click(function() {
 
 	document.getElementById("id01").style.display = "none";
+	document.getElementById("id02").style.display = "none";
 
+});
 
-  $(".cancelbtn").click(function() {
+$(".cancelbtn").click(function() {
     document.getElementById("id01").style.display = "none";
-  });
+	document.getElementById("id02").style.display = "none";
+});
 
+$(".close").click(function() {
+    document.getElementById("id02").style.display = "none";
+});
+
+
+
+$( ".register_btn" ).click(function() {
+
+	document.getElementById("id01").style.display = "none";
+	document.getElementById("id02").style.display = "block";
+
+
+	  // Get the modal
+	  var modal = document.getElementById('id02');
+  
+	  // When the user clicks anywhere outside of the modal, close it
+	  window.onclick = function(event) {
+		  if (event.target == modal) {
+			  modal.style.display = "none";
+		  }
+	  }
 });
