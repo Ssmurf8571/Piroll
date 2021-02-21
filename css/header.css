@@ -1,0 +1,54 @@
+header {
+    padding: 38px 0;
+    background-color: #fff;
+  }
+  
+  header > .container > .header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    text-transform: uppercase;
+  }
+  
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a {
+    color: #191919;
+  }
+  
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a:focus {
+    color: #39B4AF;
+  }
+
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > button {
+    animation: color 0.8s linear infinite;
+  }
+
+  @keyframes color {
+    0% {
+      color: #f44336;
+    }
+    50% {
+      color: #673ab7;
+    }
+    100% {
+      color: #f44336;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
