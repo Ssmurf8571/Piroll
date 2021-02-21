@@ -12,7 +12,7 @@ header {
   header .header_nav > .header_nav-menu > .nav-list-menu > ul {
     display: flex;
     justify-content: space-between;
-    width: 215px;
+    width: 250px;
     text-transform: uppercase;
   }
   
@@ -23,3 +23,32 @@ header {
   header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a:focus {
     color: #39B4AF;
   }
+
+  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > button {
+    animation: color 0.8s linear infinite;
+  }
+
+  @keyframes color {
+    0% {
+      color: #f44336;
+    }
+    50% {
+      color: #673ab7;
+    }
+    100% {
+      color: #f44336;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
