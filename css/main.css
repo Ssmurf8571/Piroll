@@ -195,3 +195,102 @@ p {font-size: 12px;}
   border: 0;
   font-weight: 700;
 }
+
+.contacts__section {
+  padding: 75px 0;
+}
+
+.contacts__section .contacts_info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__section .contacts_info__wrapper > .contact__info {
+  max-width: 369px;
+}
+
+.contacts__section .contacts_info__wrapper > .contact__info, .contacts__section .contacts_info__wrapper > .user__get_in_touch {
+  padding: 25px 0;
+}
+
+.contacts__section .contacts_info__wrapper > .contact__info > h2 {
+  margin: 0 0 43px;
+  font-family: "Montserrat";
+  color: #171717;
+}
+
+.contacts__section .contacts_info__wrapper > .contact__info > h4 {
+  font-family: "Nunito Sans";
+}
+
+.contacts__section .contacts_info__wrapper > .contact__info > h4:nth-child(2) {
+  margin: 0 0 36px;
+  line-height: 24px;
+  color: #787878;
+  font-weight: 400;
+}
+
+.contacts__section .contacts_info__wrapper > .contact__info > h4:nth-child(3) {
+  line-height: 36px;
+  color: #787878;
+  font-weight: 400;
+}
+
+.contacts__section .contacts_info__wrapper > .contact__info > h4 > span {
+  color: #171717;
+  font-weight: 700;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch {
+  width: 671px;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form {
+  margin: -5px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input, .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > textarea {
+  background-color: #ffffff;
+  border: 0;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input::placeholder, .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > textarea::placeholder {
+  font-family: "Nunito Sans";
+  color: #787878;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(1) {
+  grid-area: 1/1/1/1;
+  margin: 15px 15px 15px 0;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(2) {
+  grid-area: 1/2/1/2;
+  margin: 15px 0 15px 15px;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(3) {
+  grid-area: 2/1/2/3;
+  margin: 15px 0;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > textarea:nth-child(4) {
+  grid-area: 3/1/6/3;
+  margin: 15px 0 0;
+}
+
+.contacts__section .contacts_info__wrapper > .user__get_in_touch > button {
+  margin: 30px 0 0;
+  padding: 15px 25px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #10c9c3;
+  text-transform: uppercase;
+  border: 0;
+}

@@ -13,6 +13,11 @@
   .about_us__section .about_us__section__wrapper > .content_block {
     margin: 50px 0 0;
   }
+
+  .contacts__section .contacts_info__wrapper {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -98,6 +103,20 @@
   footer .footer_content_place {
     display: block;
     text-align: -webkit-center;
+  }
+
+  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input {
+    width: 100%;
+  }
+
+  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(1) {
+    margin: 15px 5px 15px 0;
+    width: 97%;
+  }
+
+  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(2) {
+    margin: 15px 0 15px 5px;
+    width: 97%;
   }
 }
 
