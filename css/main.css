@@ -89,3 +89,109 @@ p {font-size: 12px;}
   top: 50%;
   transform: translate(-22px, -22px);
 }
+
+.section1_black_block {
+  background: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), #7e7e7e;
+}
+
+.section1_black_block > .container > .center-text__section {
+  padding: 120px 0;
+}
+
+.section1_black_block > .container > .center-text__section > h1, .section1_black_block > .container > .center-text__section > h3 {
+  color: #fff;
+}
+
+.numbers_section {
+  padding: 100px 0;
+  background-color: #10C9C3;
+}
+
+.numbers_section > .container > .numbers__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers_section .numbers__list > .numbrs__list {
+  display: flex;
+}
+
+.numbers_section .numbers__list > .numbrs__list > svg {
+  fill: #fff;
+  width: 40px;
+}
+
+.numbers_section .numbers__list > .numbrs__list > .text_for__numbers__list {
+  margin: 0 0 0 27px;
+}
+
+.numbers_section .numbers__list > .numbrs__list > .text_for__numbers__list > p, .numbers_section .numbers__list > .numbrs__list > .text_for__numbers__list > h3 {
+  margin: 0;
+  font-family: "Montserrat";
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about_us__section .about_us__section__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_us__section .about_us__section__wrapper > .img_block {
+  width: 582px;
+  height: 570px;
+  background-color: #e1e1e1;
+}
+
+.about_us__section .about_us__section__wrapper > .content_block {
+  margin: 0 0 0 85px;
+  max-width: 454px;
+  align-self: center;
+}
+
+.about_us__section .about_us__section__wrapper > .content_block > h2 {
+  margin: 0 0 40px;
+  font-family: "Montserrat";
+  color: #171717;
+}
+
+.about_us__section .about_us__section__wrapper > .content_block > h4 {
+  margin: 0 0 37px;
+  font-family: "Nunito Sans";
+  color: #787878;
+}
+
+.needs_project__section {
+  padding: 100px 0;
+}
+
+.needs_project__section .needs_project__section__wrapper {
+  text-align: center;
+}
+
+.needs_project__section .needs_project__section__wrapper > h2 {
+  margin: 0 0 35px;
+  font-family: "Montserrat";
+  color: #1d1d1d;
+}
+
+.needs_project__section .needs_project__section__wrapper > h4 {
+  margin: 0 auto 37px;
+  font-family: "Nunito Sans";
+  color: #787878;
+  max-width: 537px;
+}
+
+.needs_project__section .needs_project__section__wrapper > a > button {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 16px 36px;
+  background-color: #10C9C3;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-size: 12px;
+  border: 0;
+  font-weight: 700;
+}

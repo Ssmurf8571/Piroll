@@ -37,7 +37,7 @@ footer .footer_content_place > .content3 {
     justify-content: space-between;
 }
 
-footer .footer_content_place > .content > ul > li {
+footer .footer_content_place > .content > ul > li > a { 
     color: #BCBCBC;
     font-family: "Nunito Sans";
 }
