@@ -294,3 +294,7 @@ p {font-size: 12px;}
   text-transform: uppercase;
   border: 0;
 }
+
+.map_center__section {
+  margin: 0 0 100px;
+}
