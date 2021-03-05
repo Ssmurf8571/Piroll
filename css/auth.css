@@ -46,11 +46,17 @@
   .container_auth {
     padding: 16px;
   }
-  
+
   .container_auth span.psw {
     float: right;
-    padding-top: 16px;
+    padding: 10px;
   }
+
+  .container_auth  span > a {
+    padding: 10px;
+  }
+
+  #id01 > form > div:nth-child(3) > span.psw.register_btn > a
 
   #id01 > form > div:nth-child(3) > span:nth-child(4) {
     margin: 0 12% 0 0;

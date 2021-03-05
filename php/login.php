@@ -10,13 +10,13 @@ if (empty($login) or empty($password))
 
     $login = stripslashes($login);
     $login = htmlspecialchars($login);
-$password = stripslashes($password);
+    $password = stripslashes($password);
     $password = htmlspecialchars($password);
 
     $login = trim($login);
     $password = trim($password);
 
-    include ("bd.php");
+    include ("db.php");
  
 $result = mysqli_query($db, "SELECT * FROM users WHERE login='$login'"); 
     $myrow = mysqli_fetch_array($result);
@@ -31,7 +31,7 @@ $result = mysqli_query($db, "SELECT * FROM users WHERE login='$login'");
 
     $_SESSION['login']=$myrow['login']; 
     $_SESSION['id']=$myrow['id'];
-    echo "Вы успешно вошли на сайт! <a href='../index.php'>Главная страница</a>";
+    echo "Вы успешно вошли на сайт! <a href='../index.html'>Главная страница</a>";
     }
  else {
 

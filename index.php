@@ -1,3 +1,7 @@
+<?php 
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -39,32 +43,32 @@
     <div class="container">
       <div class="header_nav">
         <div class="header_logo">
-          <a href="index.html">
+          <a href="index.php">
             <svg width="31" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="98 38 31 25"><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAZCAYAAADJ9/UkAAADkklEQVRIS72WW4gcVRCGvzrTBuk+vTveMqiggriyrBc0YlA2aN6M4C0gGNEHkycvgWh8ND6oj0aFRH0yPigqCFEUjG8qBiViFC9BjAgmoLLxNrtdpxGd6SNn6VmG3t7tmYCpp2G6qv5Tf9V/Tom19mvgck69fSPW2mPABacem+OSpult3vu3gZ4xZtYY833TQXq93kvAZiADUmB/FEXbmuKKori0KIqDQCQit0sIsNbuB+4APlLVjYBfKVEcx5uMMe8B/4rInd77N4HTiqK4Oc/zA6scILD8AXAD8Jaqbl4Ej+P4PGPMd8CEiGzLsmxfXZJOp5PkeX7Ee38h8JSq7rLWPgk8JiLH4jiemZubc3WxaZpu9d4HxhaKopjO8/yXRfCy+vuBF4C/vPfTzrm5apI0TXd77x8BjqrqlcDfwOnW2q+AKRF5JsuyndW4JEk6IhKKOwN4QFVfDD5L4ICx1oZ+XAe8oapbhpPEcbzOGHMIaAEbVfXDoYPfCARK+0VRrM/z/PBwrLX2deAu4FNVnQWKKnjo/QzwZU0PI2ttAL7ae/+yc25rTXX7ROQ+4AtVXR8GuGzp0owAV6nqkUHscOUD+pf1MEmSnSLyNHDCGDO9sLDwZxV8YmLizKIoArVrvfePOud2183IcNwy8GoPW63Wnl6vF04be+/vds4FCmstSZItIvIakEdRNNPv97fXzMhSbB14oH+ph0Cg+3oReT/Lsk1NWk7T9ID3/ibgEyDQv2xGVqR98CFJkkEPw1+LlXS73Z+awNvt9kUDpoLvSjOybOCGE5c9/BVY473/zDkXqhjJkiQ5JCLXAv8YY86tm5FVwUvt7wEeWnQU2ZBlWZDiqpam6az3/uPSaa+qbl8poLbnw87W2t+As4HfVfWcJvBx/BvBx6nEWjsWU43godIkSd4RkVvCzdRqtabm5+d/rDIwOTl5cb/fPxpuSu/9u865W5tYGgm81P4fQevAD6o6VU1srQ3AlwRlqOpZ5b2/Kv6o4KH6e0TklVI+DzvnnhuS5Q4Rebb8dq9z7tWmqhunvaa6z4F1QUJRFHW63W633W63e71eeAHXAIdV9ZpRgE8GfC3wc9hEgIOqusFaG2QVXqrwkJyvqif+F/BS+7uAJ0qAQP2O8vfjqhoepZFt5J5XtF9dOo+rathuxrKTBb8MCCt3iA/73hWq+u1YyJVNZqxYa+1e4EHgeVVdvILHtf8A03iQmnuJRLgAAAAASUVORK5CYII=" width="31" height="25" x="98" y="38"/></svg>
           </a>
         </div>
         <div class="header_nav-menu"> 
           <div class="nav-list-menu">
             <ul>
-              <li class="nav-item"><a class="nav-link" href="home.html" class="active">home</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.php">home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.php">about</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.php">contact</a></li>
               <li class="nav-item">
                 <button id="login_btn">Login</button>
   
                 <div id="id01" class="modal">
                   
-                  <form class="modal-content animate" action="#" method="post">
+                  <form class="modal-content animate" action="/Piroll/php/login.php" method="post">
                     <div class="imgcontainer">
                       <span class="close" id="close" title="Close Modal">&times;</span>
                     </div>
                 
                     <div class="container_auth">
                       <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
+                      <input type="text" name="login" placeholder="Enter Username" name="uname" required>
                 
                       <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
+                      <input type="password" name="password" placeholder="Enter Password" name="psw" required>
                         
                       <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -74,7 +78,7 @@
                     <div class="container_auth" style="background-color:#f1f1f1">
                       <button type="button" id="close" class="cancelbtn" >Cancel</button>
                       <button type="submit">Login</button>
-                      <span class="psw register_btn"><a href="#register">register?</a></span>
+                      <span class="psw register_btn"><a href="#">register?</a></span>
                       <span class="psw">Forgot <a href="#">password?</a></span>
                     </div>
                   </form>
@@ -103,8 +107,6 @@
         <div class="work-line line1">
           <div class="block_work black">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -162,8 +164,6 @@
           </div>
           <div class="block_work white">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -221,8 +221,6 @@
           </div>
           <div class="block_work black">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -282,8 +280,6 @@
         <div class="work-line line2">
           <div class="block_work white">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -341,8 +337,6 @@
           </div>
           <div class="block_work black">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -400,8 +394,6 @@
           </div>
           <div class="block_work white">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -461,8 +453,6 @@
         <div class="work-line line3">
           <div class="block_work black">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -520,8 +510,6 @@
           </div>
           <div class="block_work white">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -579,8 +567,6 @@
           </div>
           <div class="block_work black">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -640,8 +626,6 @@
         <div class="work-line line4">
           <div class="block_work white">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -699,8 +683,6 @@
           </div>
           <div class="block_work black">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -758,8 +740,6 @@
           </div>
           <div class="block_work white">
             <div id="img_eye_hover">
-              <?xml version="1.0" encoding="iso-8859-1"?>
-              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="48px" height="48px" viewBox="0 0 456.795 456.795" style="enable-background:new 0 0 456.795 456.795;"
@@ -862,7 +842,7 @@
 
     <div id="id02" class="modal">
       <span class="close" title="Close Modal">&times;</span>
-      <form class="modal-content animate" action="#">
+      <form class="modal-content animate" action="/Piroll/php/reg.php">
         <div class="imgcontainer">
           <span class="close" id="close" title="Close Modal">&times;</span>
         </div>
@@ -870,11 +850,14 @@
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
           <hr>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" name="login" placeholder="Enter Username" name="uname" required>
+
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="text" name="email" placeholder="Enter Email" name="email" required>
 
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" name="password" placeholder="Enter Password" name="psw" required>
 
           <label for="psw-repeat"><b>Repeat Password</b></label>
           <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
@@ -900,13 +883,6 @@
 	<div class="loader">
 		<div class="loader_inner"></div>
 	</div>
-
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
 
     <div>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

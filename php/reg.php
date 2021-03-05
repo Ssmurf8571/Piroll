@@ -3,10 +3,7 @@
     if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
     if (isset($_POST['email'])) { $email=$_POST['email']; if ($email =='') { unset($email);} }
 
- if (empty($login) or empty($password) or empty($email))
-    {
-    exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!");
-    }
+
 
    $login = stripslashes($login);
    $login = htmlspecialchars($login);
@@ -19,7 +16,7 @@
     $password = trim($password);
     $email = trim($email);
 
-    include ("bd.php");
+    include ("db.php");
 
     $result = mysqli_query($db, "SELECT id FROM users WHERE login='$login'");
     $myrow = mysqli_fetch_array($result);
