@@ -1,7 +1,6 @@
 <?php
     if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} }
     if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
-    if (isset($_POST['email'])) { $email=$_POST['email']; if ($email =='') { unset($email);} }
 
 
 
@@ -9,12 +8,9 @@
    $login = htmlspecialchars($login);
    $password = stripslashes($password);
    $password = htmlspecialchars($password);
-   $email = stripslashes($email);
-   $email = htmlspecialchars($email);
 
     $login = trim($login);
     $password = trim($password);
-    $email = trim($email);
 
     include ("db.php");
 
@@ -24,7 +20,7 @@
     exit ("Извините, введённый вами логин уже зарегистрирован. Введите другой логин. <br><br> <a href='../'>Главная страница</a>");
     }
 
-    $result2 = mysqli_query ($db, "INSERT INTO users (login,password,email) VALUES('$login','$password','$email')");
+    $result2 = mysqli_query ($db, "INSERT INTO users (login,password) VALUES('$login','$password')");
 
     if ($result2=='TRUE')
     {

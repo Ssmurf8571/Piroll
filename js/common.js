@@ -62,4 +62,19 @@ $( ".register_btn" ).click(function() {
 			  modal.style.display = "none";
 		  }
 	  }
+
+	  .querySelectorAll('.register_pwd')
+	  .forEach((el)=>{
+		  el.addEventListener("change",(e)=>{
+			  let [a,b]=[
+				  document.querySelector('input.register_pwd:nth-child(7)'),
+				  document.querySelector('input.register_pwd:nth-child(8)')
+			  ];
+			  let btn=document.querySelector('.form_register__button');
+			  console.log(a.value,b.value);
+			  btn.disabled=(a.value!=b.value);
+			  
+
+		  });
+	  });
 });
