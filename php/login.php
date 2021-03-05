@@ -22,8 +22,7 @@ $result = mysqli_query($db, "SELECT * FROM users WHERE login='$login'");
     $myrow = mysqli_fetch_array($result);
     if (empty($myrow['password']))
     {
-
-    exit ("Извините, введённый вами login или пароль неверный.");
+        header('Location: /Piroll/err_login.html');
     }
     else {
 
@@ -31,11 +30,11 @@ $result = mysqli_query($db, "SELECT * FROM users WHERE login='$login'");
 
     $_SESSION['login']=$myrow['login']; 
     $_SESSION['id']=$myrow['id'];
-    echo "Вы успешно вошли на сайт! <a href='../'>Главная страница</a>";
+    header('Location: /Piroll/');
     }
  else {
 
-    exit ("Извините, введённый вами login или пароль неверный.");
+    header('Location: /Piroll/err_login.html');
     }
     }
 ?>
