@@ -1,5 +1,5 @@
 /* Full-width input fields */
-.container_auth > input[type=text], .container_auth > input[type=password] {
+.container_auth > input[type=text], .container_auth > input[type=email], .container_auth > input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
