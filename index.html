@@ -54,7 +54,7 @@
   
                 <div id="id01" class="modal">
                   
-                  <form class="modal-content animate" action="#" method="post">
+                  <form class="modal-content animate" action="/Piroll/php/login.php" method="post">
                     <div class="imgcontainer">
                       <span class="close" id="close" title="Close Modal">&times;</span>
                     </div>
@@ -74,7 +74,7 @@
                     <div class="container_auth" style="background-color:#f1f1f1">
                       <button type="button" id="close" class="cancelbtn" >Cancel</button>
                       <button type="submit">Login</button>
-                      <span class="psw register_btn"><a href="#register">register?</a></span>
+                      <span class="psw register_btn"><a href="#">register?</a></span>
                       <span class="psw">Forgot <a href="#">password?</a></span>
                     </div>
                   </form>
@@ -862,7 +862,7 @@
 
     <div id="id02" class="modal">
       <span class="close" title="Close Modal">&times;</span>
-      <form class="modal-content animate" action="#">
+      <form class="modal-content animate" action="/Piroll/php/reg.php">
         <div class="imgcontainer">
           <span class="close" id="close" title="Close Modal">&times;</span>
         </div>
@@ -870,6 +870,9 @@
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
           <hr>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
 
