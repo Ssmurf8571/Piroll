@@ -31,7 +31,7 @@ $result = mysqli_query($db, "SELECT * FROM users WHERE login='$login'");
 
     $_SESSION['login']=$myrow['login']; 
     $_SESSION['id']=$myrow['id'];
-    echo "Вы успешно вошли на сайт! <a href='../index.html'>Главная страница</a>";
+    echo "Вы успешно вошли на сайт! <a href='../'>Главная страница</a>";
     }
  else {
 

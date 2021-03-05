@@ -886,9 +886,6 @@ session_start();
 
     <div>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="libs/waypoints/waypoints.min.js"></script>
-      <script src="libs/animate/animate-css.js"></script>
-      <script src="libs/plugins-scroll/plugins-scroll.js"></script>
       
       <script src="js/common.js"></script>
     </div>
