@@ -62,15 +62,15 @@ $( ".register_btn" ).click(function() {
 			  modal.style.display = "none";
 		  }
 	  }
-
-	  .querySelectorAll('.register_pwd')
+document
+	  .querySelectorAll('.reg_form__password')
 	  .forEach((el)=>{
 		  el.addEventListener("change",(e)=>{
 			  let [a,b]=[
-				  document.querySelector('input.register_pwd:nth-child(7)'),
-				  document.querySelector('input.register_pwd:nth-child(8)')
+				  document.querySelector('input.reg_form__password:nth-child(1)'),
+				  document.querySelector('input.register_pwd:nth-child(2)')
 			  ];
-			  let btn=document.querySelector('.form_register__button');
+			  let btn=document.querySelector('.signupbtn');
 			  console.log(a.value,b.value);
 			  btn.disabled=(a.value!=b.value);
 			  
