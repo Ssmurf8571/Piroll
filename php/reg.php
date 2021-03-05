@@ -31,7 +31,7 @@
 
     if ($result2=='TRUE')
     {
-      header('Location: /Piroll/');
+      header('Location: /Piroll/err_reg.html');
     }
  else {
    header('Location: /Piroll/err_reg.html');
