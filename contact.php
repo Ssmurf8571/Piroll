@@ -167,7 +167,7 @@ session_start();
 
     <div id="id02" class="modal">
       <span class="close" title="Close Modal">&times;</span>
-      <form class="modal-content animate" action="/Piroll/php/reg.php">
+      <form class="modal-content animate" action="/Piroll/php/reg.php" method="post">
         <div class="imgcontainer">
           <span class="close" id="close" title="Close Modal">&times;</span>
         </div>
@@ -175,17 +175,17 @@ session_start();
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
           <hr>
-          <label for="uname"><b>Username</b></label>
-          <input type="text" name="login" placeholder="Enter Username" name="uname" required>
+          <label for="login"><b>Username</b></label>
+          <input name="login" type="text" placeholder="Enter Username" required>
 
           <label for="email"><b>Email</b></label>
-          <input type="text" name="email" placeholder="Enter Email" name="email" required>
+          <input name="email" type="email" placeholder="Enter Email" required>
 
           <label for="psw"><b>Password</b></label>
-          <input type="password" name="password" placeholder="Enter Password" name="psw" required>
+          <input name="password" type="password" placeholder="Enter Password" required>
 
           <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <input name="psw-repeat" type="password" placeholder="Repeat Password" required>
           
           <label>
             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -195,13 +195,12 @@ session_start();
 
           <div class="clearfix">
             <button type="button" class="cancelbtn" id="close">Cancel</button>
-            <button type="submit" class="signupbtn submit">Sign Up</button>
+            <button type="submit" name="submit" class="signupbtn submit">Sign Up</button>
           </div>
         </div>
       </form>
     </div>
   </div>
-
 
 	<div class="hidden"></div>
 

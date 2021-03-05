@@ -842,7 +842,7 @@ session_start();
 
     <div id="id02" class="modal">
       <span class="close" title="Close Modal">&times;</span>
-      <form class="modal-content animate" action="/Piroll/php/reg.php">
+      <form class="modal-content animate" action="/Piroll/php/reg.php" method="post">
         <div class="imgcontainer">
           <span class="close" id="close" title="Close Modal">&times;</span>
         </div>
@@ -851,7 +851,7 @@ session_start();
           <p>Please fill in this form to create an account.</p>
           <hr>
           <label for="login"><b>Username</b></label>
-          <input name="login" type="text" name="login" placeholder="Enter Username" required>
+          <input name="login" type="text" placeholder="Enter Username" required>
 
           <label for="email"><b>Email</b></label>
           <input name="email" type="email" placeholder="Enter Email" required>
@@ -870,7 +870,7 @@ session_start();
 
           <div class="clearfix">
             <button type="button" class="cancelbtn" id="close">Cancel</button>
-            <button type="submit" class="signupbtn submit">Sign Up</button>
+            <button type="submit" name="submit" class="signupbtn submit">Sign Up</button>
           </div>
         </div>
       </form>
