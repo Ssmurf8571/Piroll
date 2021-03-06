@@ -39,7 +39,7 @@ session_start();
 
 <body>
 
-	<header>
+  <header>
     <div class="container">
       <div class="header_nav">
         <div class="header_logo">
@@ -368,16 +368,16 @@ session_start();
           <input name="email" type="email" placeholder="Enter Email" required>
 
           <label for="psw"><b>Password</b></label>
-          <input name="password" type="password" placeholder="Enter Password" required>
+          <input name="password" type="password" class="reg_form__password" id="form__password" placeholder="Enter Password" required>
 
           <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input name="psw-repeat" type="password" placeholder="Repeat Password" required>
+          <input name="psw-repeat" type="password" class="reg_form__password" id="form_re__password" placeholder="Repeat Password" required>
           
           <label>
             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
           </label>
 
-          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>       
 
           <div class="clearfix">
             <button type="button" class="cancelbtn" id="close">Cancel</button>
