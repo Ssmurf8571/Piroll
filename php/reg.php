@@ -40,7 +40,7 @@
 
     if ($result2=='TRUE')
     {
-      header('Location: /Piroll/index.php');
+      header('Location: /Piroll/');
     }
  else {
    header('Location: /Piroll/err_reg.html');

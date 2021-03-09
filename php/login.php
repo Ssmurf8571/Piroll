@@ -30,7 +30,7 @@ $result = mysqli_query($db, "SELECT * FROM users WHERE login='$login'");
 
     $_SESSION['login']=$myrow['login']; 
     $_SESSION['id']=$myrow['id'];
-    header('Location: /Piroll/index.php');
+    header('Location: /Piroll/');
     }
  else {
 
