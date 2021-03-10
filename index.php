@@ -53,9 +53,35 @@ session_start();
               <li class="nav-item"><a class="nav-link" href="./">home</a></li>
               <li class="nav-item"><a class="nav-link" href="./about.php">about</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.php">contact</a></li>
-              <?php if(isset($_SESSION['login'])) { echo '<li class="nav-item pers__area"><a class="clear__hash" href="#">'.$_SESSION['login'].'</a> </li>'; }
-              else { echo '<li class="nav-item"><button id="login_btn">Login</button></li>'; } ?>
+              <?php if(isset($_SESSION['login'])) { 
+                  echo '<li class="nav-item pers__area">
+                    <a class="clear__hash" id="login__btn" href="#">'.$_SESSION['login'].'</a>
+                  </li>'; }
+              else { 
+                echo '<li class="nav-item">
+                 <button id="login_btn">Login</button>
+                </li>'; } ?>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div id="profile__block" class="container profile__area">
+        <div class="profile__link">
+          <div class="profile__container">
+            <div class="profile__header">
+              <div class="avatar__profile"></div>
+              <div class="user">
+                <?php echo $_SESSION['login']; ?>
+              </div>
+            </div>
+            <div class="links__profile">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="logOut">
+              <button type="submit">
+                <a href="php/logout.php">Log Out</a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -876,33 +902,6 @@ session_start();
       </form>
     </div>
   </div>
-
-  <div class="profile__area container">
-    <div class="profile__link">
-      <div class="profile__container">
-        <div class="profile__header">
-          <div class="avatar__profile"></div>
-          <div class="user">
-            <?php $_SESSION['login'] ?>
-          </div>
-        </div>
-        <div class="links__profile">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </div>
-        <div class="logOut">
-          <?
-          /*
-          if(isset($_SESSION['login'])) {
-            setcookie($_SESSION['login'], '', 0);
-          }
-          session_destroy();
-          */
-          ?>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 	<div class="hidden"></div>
 
