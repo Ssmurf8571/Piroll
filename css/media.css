@@ -2,29 +2,15 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	.works_section > .container > .works-place_section > .work-line:nth-child(4) {
-    display: flex;
-  }
-
-  .about_us__section .about_us__section__wrapper {
-    justify-content: center;
-  }
-
-  .about_us__section .about_us__section__wrapper > .content_block {
-    margin: 50px 0 0;
-  }
-
-  .contacts__section .contacts_info__wrapper {
-    justify-content: center;
-    text-align: center;
-  }
+	.works_section > .container > .works-place_section > .work-line:nth-child(4) {display: flex;}
+  .about_us__section .about_us__section__wrapper {justify-content: center;}
+  .about_us__section .about_us__section__wrapper > .content_block {margin: 50px 0 0;}
+  .contacts__section .contacts_info__wrapper {justify-content: center;text-align: center;}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  .works_section > .container > .works-place_section > .work-line:nth-child(4) {
-    display: block;
-  }
+  .works_section > .container > .works-place_section > .work-line:nth-child(4) {display: block;}
 }
 
 /* Small Devices, Tablets */
@@ -52,72 +38,34 @@
 		animation: none !important;
   }
 
-  footer .footer_content_place {
-    justify-content: space-around;
-  }
-  
-  footer .footer_content_place > .content4 > ul {
-    display: flex;
-    justify-content: space-around;
-    width: calc(100vw - 50px);
-  }
-
-  .numbers_section > .container > .numbers__list {
-	  flex-wrap: wrap;
-  }
-
-  .numbers_section > .container > .numbers__list > .numbrs__list {
-	  margin: 30px;
-  }
-
-  .numbers_section > .container > .numbers__list > .numbrs__list:nth-child(4) {
-	  margin: 30px 40px 30px 30px;
-  }
+  footer .footer_content_place {justify-content: space-around;}
+  footer .footer_content_place > .content4 > ul {display: flex;justify-content: space-around;width: calc(100vw - 50px);}
+  .numbers_section > .container > .numbers__list {flex-wrap: wrap;}
+  .numbers_section > .container > .numbers__list > .numbrs__list {margin: 30px;}
+  .numbers_section > .container > .numbers__list > .numbrs__list:nth-child(4) {margin: 30px 40px 30px 30px;}
+  .profile__area {right: 0;}
 }
 /* Custom permission */
 @media only screen and (max-width : 575px) {
-	.numbers_section > .container > .numbers__list {
-    display: block;
-  }
-
-  .numbers_section > .container > .numbers__list > .numbrs__list {
-    place-content: center;
-  }
-
-  .numbers_section > .container > .numbers__list > .numbrs__list:nth-child(2) {
-    margin: 0 35px 0 0;
-  }
-  .numbers_section > .container > .numbers__list > .numbrs__list:nth-child(4) {
-    margin: 0 40px 0 0;
-  }
-
-  .about_us__section .about_us__section__wrapper > .img_block {
-    width: 100%;
-    height: 60vh;
-  }
-
+	.numbers_section > .container > .numbers__list {display: block;}
+  .numbers_section > .container > .numbers__list > .numbrs__list {place-content: center;}
+  .numbers_section > .container > .numbers__list > .numbrs__list:nth-child(2) {margin: 0 35px 0 0;}
+  .numbers_section > .container > .numbers__list > .numbrs__list:nth-child(4) {margin: 0 40px 0 0;}
+  .about_us__section .about_us__section__wrapper > .img_block {width: 100%;height: 60vh;}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  footer .footer_content_place {
-    display: block;
-    text-align: -webkit-center;
-  }
+  footer .footer_content_place {display: block;text-align: -webkit-center;}
+  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input {width: 100%;}
+  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(1) {margin: 15px 5px 15px 0;width: 97%;}
+  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(2) {margin: 15px 0 15px 5px;width: 97%;}
+}
 
-  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input {
-    width: 100%;
-  }
-
-  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(1) {
-    margin: 15px 5px 15px 0;
-    width: 97%;
-  }
-
-  .contacts__section .contacts_info__wrapper > .user__get_in_touch > .contact__form > input:nth-child(2) {
-    margin: 15px 0 15px 5px;
-    width: 97%;
-  }
+@media only screen and (max-width : 370px) {
+  header .header_logo {display: none;}
+  header > .container > .header_nav {place-content: center;}
+  .profile__area {right: auto; left: 50%; transform: translate(-50%, 0);}
 }
 
 /* Custom, iPhone Retina */

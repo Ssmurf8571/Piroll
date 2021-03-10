@@ -1,54 +1,90 @@
 header {
-    padding: 38px 0;
-    background-color: #fff;
-  }
+  padding: 38px 0;
+  background-color: #fff;
+}
   
-  header > .container > .header_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+header > .container > .header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  header .header_nav > .header_nav-menu > .nav-list-menu > ul {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-    text-transform: uppercase;
+header .header_nav > .header_nav-menu > .nav-list-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  text-transform: uppercase;
+}
+
+header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a {
+  color: #191919;
+}
+
+header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > button {
+  animation: color 0.8s linear infinite;
+}
+
+@keyframes color {
+  0% {
+    color: #f44336;
   }
-  
-  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a {
-    color: #191919;
+  50% {
+    color: #673ab7;
   }
-  
-  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > a:focus {
-    color: #39B4AF;
+  100% {
+    color: #f44336;
   }
+}
 
-  header .header_nav > .header_nav-menu > .nav-list-menu > ul > .nav-item > button {
-    animation: color 0.8s linear infinite;
-  }
+.profile__area {
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
 
-  @keyframes color {
-    0% {
-      color: #f44336;
-    }
-    50% {
-      color: #673ab7;
-    }
-    100% {
-      color: #f44336;
-    }
-  }
+.profile__link {
+  margin-left: auto;
+  padding: 30px 10px;
+  width: 300px;
+  background: #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
 
+.profile__header {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.profile__header > .avatar__profile  {
+  height: 60px;
+  width: 60px;
+  background: rgba(51,51,51,0.4);
+  border-radius: 50px;
+}
 
+.profile__header > .user {
+  margin: 0 30px 0 0;
+}
 
+.links__profile {
+  margin: 30px 0;
+}
 
+.logOut > button {
+  padding: 10px 0;
+  background: dodgerblue;
+  border: 0;
+}
 
+.logOut a {
+  padding: 0 25px;
+  color: #fff;
+  text-decoration: none;
+}
 
-
-
-
-
-
- 
+.active-profile {
+  display: block;
+}
